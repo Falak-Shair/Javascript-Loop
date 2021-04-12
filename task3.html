@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+
+    Q3) Write a program to find the
+    range of a set of numbers. Range is
+    the difference between the smallest
+    and biggest number in the list.
+    <br><br>
+
+
+    <input type="number" id="num" placeholder="Insert number">
+
+    <button onclick="Insert()">Insert into List</button>
+    <button onclick="FindRange()">Find Range</button>
+
+    <p id="print"></p>
+
+    <script>
+        var array = [];
+        function Insert() {
+            var value = document.getElementById('num').value;
+
+            array.push(parseInt(value));
+            console.log(array)
+            document.getElementById('print').innerHTML += value + '<br>';
+            document.getElementById('num').value = '';
+        }
+
+        function FindRange() {
+            console.log(array)
+            var min = 999999;
+            var max = 0;
+            for (var i = 0 ; i < array.length ; i++){
+
+                if( array[i] > max)
+                max = array[i]
+                
+
+                if( array[i] < min)
+                min = array[i]
+            }
+                console.log(min)
+                console.log(max)
+
+                var range = max - min ;
+
+                alert(range)
+
+
+
+        }
+
+
+    </script>
+</body>
+
+</html>

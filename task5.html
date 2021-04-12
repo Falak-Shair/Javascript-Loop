@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+
+        Q5) Write a program to print the 
+        multiplication table of the number 
+        entered by the user. The table 
+        should get displayed in the 
+        following form.  <br>
+        29 * 1 = 29      <br>
+        29 * 2 = 58
+
+    <br><br>
+    <input type='number' placeholder="enter digit" id="number">
+    <button  onclick="main()">Print <Table></Table></button>
+
+    <script>
+        function main(){
+            var num = document.getElementById('number').value;
+            for (var i = 1 ; i <= 10 ; i++){
+                var  table = num*i;
+                document.write( num + ' * ' +i + ' = ' +table +'<br>')
+            }
+
+
+
+        }
+    
+    
+    
+    </script>
+</body>
+</html>

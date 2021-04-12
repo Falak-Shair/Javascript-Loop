@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+</head>
+<body>
+        Q2) Write a program to find the 
+        factorial value of any number 
+        entered through the keyboard.
+
+        <br><br>
+        <!-- <p id="falak"></p> -->
+        <input type="text" name="" id="no" placeholder="enter any 5 digit number">
+        <button onclick="main()">Check</button>
+
+
+        <script>
+            function main(){
+                var no = document.getElementById('no').value;
+                var fact = 1 ;
+
+                for(var i = 1 ; i <= no ; i++){
+                    
+                    fact *= i ;
+                    console.log(fact);
+                    // document.getElementById('falak').innerHTML= document.getElementById('falak').innerHTML+fact+'<br>';
+
+
+                }
+            }
+        
+        
+        
+        
+        </script>
+    
+</body>
+</html>
